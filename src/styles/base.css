@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bsd-900;
+    src: url(../fonts/BigShouldersDisplay-Black.ttf);
+}
+@font-face {
+    font-family: bsd-800;
+    src: url(../fonts/BigShouldersDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: outfit-300;
+    src: url(../fonts/Outfit-Regular.ttf);
+}
+:root {
+    --color-primary: #ffffff;
+    --color-primary-on-text: #151515;
+
+    --color-button-arrow: #d5966c;
+    --font-family-primary: outfit-300;
+}
+
+
+.body {
+    background-color: var(--color-primary);
+    font-family: outfit-300;
+    font-size: 1.125rem;
+}
+p {
+    line-height: 1.5;
+}
+
+
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+}
+.width {
+    padding: 0 1rem;
+}
+
+
+.header {
+    margin-bottom: 7.5rem;
+}
+.header__photo {
+    height: 240px;
+    background-image: url(../assets/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+.header__logo {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 2rem;
+}
+.header__body-text {
+    margin-bottom: 2rem;
+}
+
+
+.button {
+    border: none;
+    height: 4rem;
+    display: flex;
+    cursor: pointer;
+    background: none;
+    transition: background-color 0.5s ease-in-out;
+}
+.button:hover .button__text {
+    background-color: var(--color-button-arrow);
+    color: var(--color-primary);
+}
+.button:hover .button__arrow-container {
+    background-color: var(--color-primary-on-text);
+}
+.button__text {
+    display: inline-block;
+    padding: 1.2rem 2.1rem;
+    font-size: 1.2rem;
+    letter-spacing: 3.6px;
+    background-color: var(--color-primary-on-text);
+    color: var(--color-primary);
+    font-family: bsd-800;
+}
+.button__arrow-container {
+    display: inline-block;
+    background-color: var(--color-button-arrow);
+    padding: 1.05rem 1.5rem;
+}
+.button__arrow path {
+    fill: var(--color-primary);
+}
