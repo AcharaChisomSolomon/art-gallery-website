@@ -1,1 +1,46 @@
-@import url(./base.css)
+@import './base.css';
+
+
+.main__link-home {
+    position: absolute;
+}
+.main__map {
+    background-image: url(../assets/mobile/image-map.png);
+    height: 550px;
+}
+
+
+.main__location-container {
+    background-color: var(--color-primary-on-text);
+}
+.main__location {
+    padding: 3rem 1rem;
+}
+.main__location h2, p {
+    color: var(--color-primary);
+}
+.main__location h3 {
+    color: var(--color-button-arrow);
+    font-size: 2rem;
+    font-family: bsd-900;
+    margin-bottom: 1.3rem;
+}
+.main__location h2 {
+    font-size: 3.125rem;
+    margin-bottom: 3rem;
+    font-family: bsd-900;
+}
+.space {
+    margin-bottom: 1.3rem;
+}
+
+
+.footer__secondary {
+    background-color: var(--color-button-arrow);
+}
+.footer__secondary .footer__text {
+    color: var(--color-primary-on-text);
+}
+.footer__secondary .footer__social path {
+    fill: var(--color-primary-on-text);
+}

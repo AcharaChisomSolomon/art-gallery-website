@@ -1,1 +1,44 @@
-@import url(./base.css)
+@import './base.css';
+
+
+.main {
+    margin-bottom: 7.5rem;
+}
+
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.main__text-title {
+    font-size: 3.125rem;
+    font-family: bsd-900;
+    margin-bottom: 1.375rem;
+}
+
+
+.main__photo1 {
+    height: 320px;
+    background-image: url(../assets/mobile/image-grid-1.jpg);
+}
+.main__photo2 {
+    height: 480px;
+    background-image: url(../assets/mobile/image-grid-2.jpg);
+}
+.main__photo3 {
+    height: 200px;
+    background-image: url(../assets/mobile/image-grid-3.jpg);
+}
+
+
+.main__text2 {
+    padding: 3rem 1.5rem;
+    background-color: var(--color-primary-on-text);
+    color: var(--color-primary);
+}
+.main__text2 .main__text-desc {
+    color: var(--color-primary);
+}

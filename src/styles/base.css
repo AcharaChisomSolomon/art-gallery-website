@@ -30,8 +30,15 @@
     font-family: outfit-300;
     font-size: 1.125rem;
 }
+h1, h2, h3 {
+    text-transform: uppercase;
+}
 p {
+    color: #444;
     line-height: 1.5;
+}
+a {
+    text-decoration: none;
 }
 
 
@@ -41,6 +48,12 @@ p {
 }
 .width {
     padding: 0 1rem;
+}
+
+
+.main__photo {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -95,4 +108,21 @@ p {
 }
 .button__arrow path {
     fill: var(--color-primary);
+}
+
+
+.footer {
+    background-color: var(--color-primary-on-text);
+}
+.footer__container {
+    padding: 3rem 1.5rem;
+}
+.footer .footer__text {
+    color: var(--color-primary);
+    margin: 2.25rem 0;
+}
+.footer__socials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
