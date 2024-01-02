@@ -44,3 +44,27 @@
 .footer__secondary .footer__social path {
     fill: var(--color-primary-on-text);
 }
+
+@media (min-width: 600px) and (max-width: 750px) {
+    .main__map {
+        background-image: url(../assets/mobile/image-map@2x.png);
+        height: 1000px;
+    }
+}
+
+
+@media (min-width: 750px) {
+    .main__link-home {
+        left: 2rem;
+    }
+    .main__map {
+        background-image: url(../assets/tablet/image-map.png);
+        height: 600px;
+    }
+
+    .main__location {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 68px;
+    }
+}

@@ -42,3 +42,56 @@
 .main__text2 .main__text-desc {
     color: var(--color-primary);
 }
+
+
+@media (min-width: 600px) and (max-width: 750px) {
+    .main__photo1 {
+        background-image: url(../assets/mobile/image-grid-1@2x.jpg);
+        height: 640px;
+    }
+    .main__photo2 {
+        background-image: url(../assets/mobile/image-grid-2@2x.jpg);
+        height: 960px;
+    }
+    .main__photo3 {
+        background-image: url(../assets/mobile/image-grid-3@2x.jpg);
+        height: 400px;
+    }
+}
+
+
+@media (min-width: 750px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr 0.25fr 1fr;
+        grid-template-rows: 400px 320px 400px;
+        grid-template-areas:
+                            "text1 img1 img1"
+                            "img2 img2 img3"
+                            "img2 img2 text2";
+    }
+    .main__photo1 {
+        background-image: url(../assets/tablet/image-grid-1.jpg);
+        grid-area: img1;
+        height: inherit;
+    }
+    .main__text1 {
+        grid-area: text1;
+        margin: auto 0;
+    }
+    .main__photo2 {
+        background-image: url(../assets/tablet/image-grid-2.jpg);
+        grid-area: img2;
+        height: inherit;
+    }
+    .main__photo3 {
+        background-image: url(../assets/tablet/image-grid-3.jpg);
+        grid-area: img3;
+        height: inherit;
+    }
+    .main__text2 {
+        grid-area: text2;
+        height: 400px;
+        margin: auto;
+    }
+}
