@@ -51,6 +51,7 @@ main {
     display: grid;
     row-gap: clamp(1rem, -0.1428571428571428rem + 2.380952380952381vw, 2rem);
     margin: clamp(7.5rem, 3.2142857142857153rem + 8.928571428571427vw, 11.25rem) auto;
+    max-width: 90rem;
 }
 .text h2 {
     margin-bottom: clamp(1.5rem, 0.9285714285714286rem + 1.1904761904761905vw, 2rem);
@@ -68,7 +69,6 @@ main img {
 @media screen and (min-width: 48rem) {
     main {
         grid-template-columns: clamp(13.9375rem, 4.866071428571429rem + 18.898809523809522vw, 21.875rem) 1fr clamp(17.5rem, 12.5rem + 10.416666666666666vw, 21.875rem);
-        grid-template-rows: repeat(3, auto);
         column-gap: clamp(1rem, -0.1428571428571428rem + 2.380952380952381vw, 2rem);
     }
     .light-bg {
@@ -108,6 +108,7 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 2.38rem;
+    max-width: 69rem;
 }
 ul {
     display: flex;
