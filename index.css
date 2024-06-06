@@ -61,7 +61,6 @@ p {
 }
 .header-logo img, .desktop-logo img {
     height: 100%;
-    /* width: 100%; */
 }
 .header-desc {
     padding: 0 clamp(1rem, -2.1753731343283587rem + 13.805970149253731vw, 10.25rem);
@@ -88,7 +87,7 @@ p {
 @media screen and (min-width: 70rem) {
     header {
         grid-template-columns: 2fr 2.5fr 0.3fr 2fr;
-        grid-template-rows: 100vh;
+        /* grid-template-rows: 100vh; */
     }
     .header-black {
         background-color: var(--dark);
