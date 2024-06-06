@@ -92,6 +92,37 @@ main img {
     .dark-bg {
         grid-column: 3 / 4;
         grid-row: 3 / 4;
+    }   
+}
+
+
+footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: clamp(3rem, 2.3134328358208958rem + 2.9850746268656714vw, 5rem) clamp(1rem, -2.1753731343283587rem + 13.805970149253731vw, 10.25rem);
+}
+footer p {
+    font-size: var(--p-sec-font-size);
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.38rem;
+}
+ul {
+    display: flex;
+    gap: 1.19rem;
+}
+li {
+    list-style: none;
+}
+li:hover svg path {
+    fill: var(--orange);
+}
+@media screen and (min-width: 48rem) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
     }
     
 }
