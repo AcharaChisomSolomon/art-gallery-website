@@ -34,6 +34,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     text-transform: uppercase;
+    font-weight: 900;
 }
 h1 {
     font-size: var(--h1-font-size);
@@ -43,6 +44,7 @@ h2 {
 }
 p {
     font-size: var(--p-font-size);
+    font-weight: 400;
 }
 
 
@@ -93,6 +95,37 @@ main img {
         grid-column: 3 / 4;
         grid-row: 3 / 4;
     }   
+}
+
+
+.l {
+    background-color: var(--dark);
+    padding: clamp(3rem, 1.7985074626865671rem + 5.223880597014925vw, 6.5rem) clamp(1rem, -2.1753731343283587rem + 13.805970149253731vw, 10.25rem) clamp(3.5rem, 1.955223880597015rem + 6.7164179104477615vw, 8rem);
+}
+.location {
+    color: var(--white);
+    max-width: 69rem;
+}
+.location h2 {
+    margin-bottom: 2rem;
+}
+.location div {
+    display: flex;
+    gap: clamp(1.25rem, 1.164179104477612rem + 0.3731343283582089vw, 1.5rem);
+    flex-direction: column;
+}
+.location div p:last-child {
+    max-width: 33.75rem;
+}
+h3 {
+    color: var(--orange);
+    font-size: clamp(2rem, 1.7142857142857144rem + 0.5952380952380952vw, 2.25rem);
+}
+@media screen and (min-width: 48rem){
+    .location {
+        display: flex;
+        gap: clamp(4.25rem, -6.607142857142856rem + 22.619047619047617vw, 13.75rem);
+    }
 }
 
 
