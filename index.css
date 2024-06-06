@@ -109,6 +109,13 @@ footer p {
     flex-direction: column;
     gap: 2.38rem;
     max-width: 69rem;
+    margin: 0 auto;
+}
+.logo-container {
+    height: clamp(2.5rem, 1.2142857142857144rem + 2.6785714285714284vw, 3.625rem);
+}
+.logo-container img {
+    height: 100%;
 }
 ul {
     display: flex;
@@ -123,7 +130,11 @@ li:hover svg path {
 @media screen and (min-width: 48rem) {
     .footer-container {
         flex-direction: row;
-        justify-content: space-between;
+        gap: 0;
+    } 
+    .address {
+        margin-left: clamp(4.06rem, -1.3342857142857145rem + 11.238095238095237vw, 8.78rem);
+        margin-right: auto;
+        width: clamp(17.5626rem, 6.919857142857143rem + 22.17238095238095vw, 26.875rem);
     }
-    
 }
