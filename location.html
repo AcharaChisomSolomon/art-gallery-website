@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+      #mapid { height: 400px; }
+  </style>
   
   <title>Art gallery website</title>
 
@@ -12,14 +17,19 @@
 </head>
 <body>
 
-  <a class="button" href="index.html">
-    <span class="btn-arrow">
-      <svg width="10" height="24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke="#FFF" fill="none" d="M9 24 1 12 9 0" />
-      </svg>
-    </span>
-    <span class="btn-text">Back to home</span>
-  </a>
+  <div class="map">
+    <div id="mapid">
+    
+    </div>
+    <a class="button" href="index.html">
+      <span class="btn-arrow">
+        <svg width="10" height="24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="#FFF" fill="none" d="M9 24 1 12 9 0" />
+        </svg>
+      </span>
+      <span class="btn-text">Back to home</span>
+    </a>
+  </div>
 
   <section class="l">
     <div class="location">
@@ -78,5 +88,16 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19,
+      }).addTo(mymap);
+
+      L.marker([51.505, -0.09]).addTo(mymap);
+  </script>
 </body>
 </html>
