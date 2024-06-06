@@ -12,15 +12,34 @@
 </head>
 <body>
 
-  <header></header>
-
-  Modern Art Gallery
-
-  The arts in the collection of the Modern Art Gallery all started 
-  from a spark of inspiration. Will these pieces inspire you? Visit 
-  us and find out.
-
-  Our location
+  <header>
+    <div class="header-img">
+      <picture>
+        <source media="(min-width: 89rem)" srcset="./assets/desktop/image-hero.jpg">
+        <source media="(min-width: 46rem)" srcset="./assets/tablet/image-hero.jpg">
+        <source media="(min-width: 24rem)" srcset="./assets/mobile/image-hero@2x.jpg">
+        <img src="./assets/mobile/image-hero.jpg" alt="">
+      </picture>
+    </div>
+    <div class="header-desc">
+      <div class="header-logo">
+        <img src="./assets/logo-dark.svg" alt="logo">
+      </div>
+      <p>
+        The arts in the collection of the Modern Art Gallery all started
+        from a spark of inspiration. Will these pieces inspire you? Visit
+        us and find out.
+      </p>
+      <a class="button" href="location.html">
+        <span class="btn-text">Our location</span>
+        <span class="btn-arrow">
+          <svg width="10" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#FFF" fill="none" d="m1 0 8 12-8 12" />
+          </svg>
+        </span>
+      </a>
+    </div>
+  </header>
 
   <main>
     <section class="image img-1">
