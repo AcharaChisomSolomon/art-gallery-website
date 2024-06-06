@@ -101,6 +101,10 @@ footer {
     color: var(--white);
     padding: clamp(3rem, 2.3134328358208958rem + 2.9850746268656714vw, 5rem) clamp(1rem, -2.1753731343283587rem + 13.805970149253731vw, 10.25rem);
 }
+.location-footer {
+    background-color: var(--orange);
+    color: var(--dark);
+}
 footer p {
     font-size: var(--p-sec-font-size);
 }
@@ -126,6 +130,12 @@ li {
 }
 li:hover svg path {
     fill: var(--orange);
+}
+.location-footer svg path {
+    fill: var(--dark);
+}
+.location-footer li:hover svg path {
+    fill: var(--white);
 }
 @media screen and (min-width: 48rem) {
     .footer-container {
