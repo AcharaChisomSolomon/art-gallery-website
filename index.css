@@ -87,7 +87,6 @@ p {
 @media screen and (min-width: 70rem) {
     header {
         grid-template-columns: 2fr 2.5fr 0.3fr 2fr;
-        /* grid-template-rows: 100vh; */
     }
     .header-black {
         background-color: var(--dark);
