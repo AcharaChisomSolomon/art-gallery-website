@@ -57,7 +57,7 @@ p {
 }
 .desktop-logo {
     display: none;
-    height: 11rem;
+    height: clamp(6.875rem, 5.458955223880597rem + 6.156716417910448vw, 11rem);
 }
 .header-logo img, .desktop-logo img {
     height: 100%;
