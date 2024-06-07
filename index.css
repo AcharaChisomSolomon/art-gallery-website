@@ -116,12 +116,7 @@ p {
         grid-row: 1 / 2;
         align-self: center;
         margin-left: 10rem;
-    }
-    /* .dark-logo {
-        z-index: 4;
-    } */
-    .light-logo {
-        z-index: 2;
+        mix-blend-mode: difference;
     }
 }
 .button {
